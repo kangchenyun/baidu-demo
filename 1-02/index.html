@@ -95,17 +95,17 @@
             text-align: left;
             font-size: 0.8em;
         }
-        th {
-            padding: 5px;
-            border: 1px solid #ccc;
+        thead {
             background-color: #333;
             color: #fff;
         }
-        td {
+        td,
+        th
+        {
             padding: 5px;
             border: 1px solid #ccc;
         }
-        tr:last-child {
+        tfoot {
             background-color: #ccc;
         }
 
@@ -300,35 +300,41 @@
         </ol>
         <table>
             <caption>这是一个表格</caption>
-            <tr>
-                <th>表头</th>
-                <th>表头</th>
-                <th>表头</th>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td><a href="javascript:">操作</a></td>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td><a href="javascript:">操作</a></td>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td><a href="javascript:">操作</a></td>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td><a href="javascript:">操作</a></td>
-            </tr>
-            <tr>
-                <td>总计</td>
-                <td colspan="2">1000</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="javascript:">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="javascript:">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="javascript:">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="javascript:">操作</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </tfoot>
         </table>
         <!--/文章三 内容-->
     </article>
