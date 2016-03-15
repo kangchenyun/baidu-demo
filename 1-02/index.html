@@ -32,7 +32,7 @@
         <header>
             <h1>文章一级标题</h1>
             <h2>文章二级标题</h2>
-            <span class="author">团队：MELOIFE</span>
+            <span>团队：MELOIFE</span>
             <time datetime="2016-03-14 20:00">2016/03/14 20:00</time>
         </header>
         <!--/文章一 头部-->
@@ -70,7 +70,7 @@
         <header>
             <h1>另一篇文章一级标题</h1>
             <h2>文章二级标题</h2>
-            <span class="author">团队：MELOIFE</span>
+            <span>团队：MELOIFE</span>
             <time datetime="2016-03-14 20:00">2016/03/14 20:00</time>
         </header>
         <!--/文章二 头部-->
@@ -93,7 +93,7 @@
             </ul>
         </div>
 
-        <div class="pics">
+        <div>
             <h2>图片</h2>
             <figure>
                 <figcaption>好看的图片</figcaption>
@@ -135,7 +135,7 @@
         <header>
             <h1>最后一篇文章一级标题</h1>
             <h2>文章二级标题</h2>
-            <span class="author">团队：MELOIFE</span>
+            <span>团队：MELOIFE</span>
             <time datetime="2016-03-14 20:00">2016/03/14 20:00</time>
         </header>
         <!--/文章三 头部-->
@@ -195,20 +195,20 @@
         <form action="regi.php">
 
             <!--注册表单 必填部分-->
-            <label for="email" class="form-tag">请输入邮箱地址：</label>
+            <label for="email">请输入邮箱地址：</label>
             <input type="email" id="email" placeholder="请输入你的邮箱" required>
-            <p class="form-tips">邮箱地址请按要求输入</p>
+            <span>邮箱地址请按要求输入</span>
 
-            <label for="password" class="form-tag">请输入密码：</label>
+            <label for="password">请输入密码：</label>
             <input type="password" maxlength="11" id="password" placeholder="请输入你的密码" required><br>
-            <label for="password_check" class="form-tag">请重复输入密码：</label>
+            <label for="password_check">请重复输入密码：</label>
             <input type="password" maxlength="11" id="password_check" placeholder="请再次输入你的密码" required>
-            <p class="form-tips">密码请为6-16位英文数字</p>
+            <span>密码请为6-16位英文数字</span>
             <!--/注册表单 必填部分-->
 
             <!--注册表单 非必填部分-->
             <p>
-                <label class="form-tag">性别：</label>
+                <label>性别：</label>
                 <input type="radio" name="gender" value="male" id="gender_male" checked>
                 <label for="gender_male">男</label>
                 <input type="radio" name="gender" value="female" id="gender_female">
@@ -216,7 +216,7 @@
             </p>
 
             <p>
-                <label for="city" class="form-tag">城市：</label>
+                <label for="city">城市：</label>
                 <select id="city">
                     <option value="1">北京</option>
                     <option value="shanghai">上海</option>
@@ -226,7 +226,7 @@
             </p>
 
             <p>
-                <label class="form-tag">爱好：</label>
+                <label>爱好：</label>
                 <input type="checkbox" name="hobby" value="sport" id="hobby_sport">
                 <label for="hobby_sport">运动</label>
                 <input type="checkbox" name="hobby" value="art" id="hobby_art">
@@ -235,8 +235,8 @@
                 <label for="hobby_sci">科学</label>
             </p>
 
-            <p class="text-desc">
-                <label for="description" class="form-tag">个人描述：</label>
+            <p>
+                <label for="description">个人描述：</label>
                 <textarea name="desc" id="description" cols="30" rows="5" placeholder="请输入你的个人描述"></textarea><br>
             </p>
             <!--/注册表单 非必填部分-->

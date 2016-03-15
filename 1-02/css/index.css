@@ -110,26 +110,28 @@ blockquote {
 }
 
 /* 表单使用百分比定位是为了响应式设计，虽然在屏幕宽度极小时还不完善 */
-.form-tag {
+form > label,
+p > label:first-child
+{
     display: inline-block;
     width: 42%;
     margin: 10px 0;
     text-align: right;
 }
-form > input {
-    padding: 3px;
-}
-.form-tips {
+form > span {
+    display: block;
     padding-left: 3px;
     margin-left: 42%;
     margin-top: 0;
     font-size: 0.8em;
 }
-.text-desc label {
-    display: inline-block;
-    margin-top: -10px;
+form > input {
+    padding: 3px;
 }
 textarea {
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
     vertical-align: top;
 }
 button {
