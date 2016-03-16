@@ -15,6 +15,9 @@ img {
     height: 80px;
     border: 1px solid #999;
 }
+div {
+    background-color: #fff;
+}
 .team-info {
     float: left;
     padding: 20px;
