@@ -4,17 +4,49 @@ body {
     padding: 0;
 }
 main {
-    position: relative;
     margin: 20px;
     padding: 20px;
+    min-height: 530px;
     background-color: #eee;
     border: 1px solid #999;
 }
 img {
     width: 80px;
     height: 80px;
+    border: 1px solid #999;
 }
 .team-info {
+    float: left;
+    padding: 20px;
+    width: 160px;
+    border: 1px solid #999;
+}
+.team-intro {
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 140px;
+    border: 1px solid #999;
+}
+.team-member {
+    float: right;
+    padding: 20px;
+    width: 80px;
+    border: 1px solid #999;
+}
+.team-member img {
+    margin-bottom: 15px;
+}
+.team-member img:last-child {
+    margin-bottom: 0;
+}
+/* 以上为float实现方法 */
+
+
+/* 以下为position实现方法 */
+.implement2 {
+    position: relative;
+}
+.team-info2 {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -22,18 +54,23 @@ img {
     width: 160px;
     border: 1px solid #999;
 }
-.team-intro {
-    position: absolute;
-    top: 20px;
+.team-intro2 {
+    padding: 20px;
     margin-left: 220px;
-    margin-right: 160px;
+    margin-right: 140px;
     border: 1px solid #999;
 }
-.team-member {
-    /*position: absolute;*/
+.team-member2 {
+    position: absolute;
     top: 20px;
     right: 20px;
     padding: 20px;
     width: 80px;
     border: 1px solid #999;
+}
+.team-member2 img {
+    margin-bottom: 15px;
+}
+.team-member2 img:last-child {
+    margin-bottom: 0;
 }
