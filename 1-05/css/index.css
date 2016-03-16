@@ -53,6 +53,7 @@ section
     margin: 20px 430px 20px 20px;
     padding: 20px;
     background-color: #fff;
+    box-shadow: 3px 3px 3px #999;
 }
 article:last-child {
     clear: both;
@@ -125,6 +126,7 @@ aside {
     background-color: #fff;
     width: 350px;
     padding: 20px;
+    box-shadow: 3px 3px 3px #999;
 }
 aside h2 {
     font-size: 1em;
