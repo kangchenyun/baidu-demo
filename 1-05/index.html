@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Task_1_2_1</title>
+    <title>Task_1_5_1</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -24,6 +24,64 @@
 
 <!--页面主体-->
 <main>
+
+    <!--侧栏-->
+    <aside>
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+
+        <form action="regi.php">
+
+            <!--注册表单 必填部分-->
+            <label for="email">请输入邮箱地址：</label>
+            <input type="email" id="email" placeholder="请输入你的邮箱" required>
+            <span>邮箱地址请按要求输入</span>
+
+            <label for="password">请输入密码：</label>
+            <input type="password" maxlength="11" id="password" placeholder="请输入你的密码" required><br>
+            <label for="password_check">请重复输入密码：</label>
+            <input type="password" maxlength="11" id="password_check" placeholder="请再次输入你的密码" required>
+            <span>密码请为6-16位英文数字</span>
+            <!--/注册表单 必填部分-->
+
+            <!--注册表单 非必填部分-->
+            <p>
+                <label>性别：</label>
+                <input type="radio" name="gender" value="male" id="gender_male" checked>
+                <label for="gender_male">男</label>
+                <input type="radio" name="gender" value="female" id="gender_female">
+                <label for="gender_female">女</label>
+            </p>
+
+            <p>
+                <label for="city">城市：</label>
+                <select id="city">
+                    <option value="1">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="shenzhen">深圳</option>
+                    <option value="guangzhou">广州</option>
+                </select>
+            </p>
+
+            <p>
+                <label>爱好：</label>
+                <input type="checkbox" name="hobby" value="sport" id="hobby_sport">
+                <label for="hobby_sport">运动</label>
+                <input type="checkbox" name="hobby" value="art" id="hobby_art">
+                <label for="hobby_art">艺术</label>
+                <input type="checkbox" name="hobby" value="sci" id="hobby_sci">
+                <label for="hobby_sci">科学</label>
+            </p>
+
+            <p>
+                <label for="description">个人描述：</label>
+                <textarea name="desc" id="description" cols="20" rows="5" placeholder="请输入你的个人描述"></textarea><br>
+            </p>
+            <!--/注册表单 非必填部分-->
+
+            <button type="submit">确认提交</button>
+        </form>
+    </aside>
+    <!--/侧栏-->
 
     <!--文章一-->
     <article>
@@ -85,7 +143,9 @@
                 </a>
                 这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
             </p>
-            <img src="http://7xruf3.com1.z0.glb.clouddn.com/1-01-small.jpg" alt="了不起的盖茨比">
+            <p>
+                <img src="http://7xruf3.com1.z0.glb.clouddn.com/1-01-small.jpg" alt="了不起的盖茨比">
+            </p>
             <ul>
                 <li>列表项目一</li>
                 <li>列表项目二</li>
@@ -98,6 +158,18 @@
 
     <section>
         <h2>图片</h2>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xruf3.com1.z0.glb.clouddn.com/1-01-small.jpg" alt="了不起的盖茨比">
+        </figure>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xruf3.com1.z0.glb.clouddn.com/1-01-small.jpg" alt="了不起的盖茨比">
+        </figure>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xruf3.com1.z0.glb.clouddn.com/1-01-small.jpg" alt="了不起的盖茨比">
+        </figure>
         <figure>
             <figcaption>好看的图片</figcaption>
             <img src="http://7xruf3.com1.z0.glb.clouddn.com/1-01-small.jpg" alt="了不起的盖茨比">
@@ -187,64 +259,6 @@
         <!--/文章三 内容-->
     </article>
     <!--/文章三-->
-
-    <!--侧栏-->
-    <aside>
-        <blockquote>这里以后是一个侧栏，这是侧栏的标题，侧栏注册窗口标题</blockquote>
-
-        <form action="regi.php">
-
-            <!--注册表单 必填部分-->
-            <label for="email">请输入邮箱地址：</label>
-            <input type="email" id="email" placeholder="请输入你的邮箱" required>
-            <span>邮箱地址请按要求输入</span>
-
-            <label for="password">请输入密码：</label>
-            <input type="password" maxlength="11" id="password" placeholder="请输入你的密码" required><br>
-            <label for="password_check">请重复输入密码：</label>
-            <input type="password" maxlength="11" id="password_check" placeholder="请再次输入你的密码" required>
-            <span>密码请为6-16位英文数字</span>
-            <!--/注册表单 必填部分-->
-
-            <!--注册表单 非必填部分-->
-            <p>
-                <label>性别：</label>
-                <input type="radio" name="gender" value="male" id="gender_male" checked>
-                <label for="gender_male">男</label>
-                <input type="radio" name="gender" value="female" id="gender_female">
-                <label for="gender_female">女</label>
-            </p>
-
-            <p>
-                <label for="city">城市：</label>
-                <select id="city">
-                    <option value="1">北京</option>
-                    <option value="shanghai">上海</option>
-                    <option value="shenzhen">深圳</option>
-                    <option value="guangzhou">广州</option>
-                </select>
-            </p>
-
-            <p>
-                <label>爱好：</label>
-                <input type="checkbox" name="hobby" value="sport" id="hobby_sport">
-                <label for="hobby_sport">运动</label>
-                <input type="checkbox" name="hobby" value="art" id="hobby_art">
-                <label for="hobby_art">艺术</label>
-                <input type="checkbox" name="hobby" value="sci" id="hobby_sci">
-                <label for="hobby_sci">科学</label>
-            </p>
-
-            <p>
-                <label for="description">个人描述：</label>
-                <textarea name="desc" id="description" cols="30" rows="5" placeholder="请输入你的个人描述"></textarea><br>
-            </p>
-            <!--/注册表单 非必填部分-->
-
-            <button type="submit">确认提交</button>
-        </form>
-    </aside>
-    <!--/侧栏-->
 </main>
 <!--/页面主体-->
 
