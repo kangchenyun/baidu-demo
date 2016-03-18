@@ -1,0 +1,114 @@
+/* 行背景间隔显示 */
+table {
+    width: 300px;
+    margin: 50px;
+}
+thead {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+}
+tbody tr:nth-child(even) {
+    background-color: #ccc;
+}
+.hot-site {
+    color: #f00;
+}
+
+/* 输入框过渡 */
+/* 输入框伸长了100像素，所以边距左右各缩短50像素 */
+input {
+    position: relative;
+    left: -50px;
+    clear: both;
+    width: 200px;
+    margin: 0 150px;
+}
+/* 注意上面的 margin: 0 150px; */
+/* 注意下面的 margin: 0 100px; */
+input:focus {
+    width: 300px;
+    margin: 0 100px;
+}
+/* 时间相同以保证动画协调性 */
+input:focus {
+    -webkit-transition: width 0.7s, margin 0.7s;
+    -moz-transition: width 0.7s, margin 0.7s;
+    -o-transition: width 0.7s, margin 0.7s;
+    transition: width 0.7s, margin 0.7s;
+}
+
+/* 轮播图 */
+.container {
+    overflow: hidden;
+    width: 300px;
+    height: 150px;
+    margin: 50px;
+}
+.container div {
+    float: left;
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ccc;
+}
+nav {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    margin-top: 120px;
+    text-align: right;
+}
+a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #888;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+#box-1 {
+    background-color: #f00;
+}
+#box-2 {
+    background-color: #0f0;
+    transition: background-color 1s;
+
+}
+#box-3 {
+    background-color: #00f;
+}
+
+.container
+{
+    background:red;
+    animation:myfirst 3s;
+    -moz-animation:myfirst 3s;
+    -webkit-animation:myfirst 3s;
+    -o-animation:myfirst 3s;
+}
+
+@keyframes myfirst
+{
+    from {background:red;}
+    to {background:green;}
+}
+
+@-moz-keyframes myfirst
+{
+    from {background:red;}
+    to {background:green;}
+}
+
+@-webkit-keyframes myfirst
+{
+    from {background:red;}
+    to {background:green;}
+}
+
+@-o-keyframes myfirst
+{
+    from {background:red;}
+    to {background:green;}
+}
