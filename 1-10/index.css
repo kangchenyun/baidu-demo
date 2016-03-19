@@ -1,0 +1,38 @@
+main {
+    display:         flex;
+    display: -webkit-flex;
+    flex-flow: wrap;
+    -webkit-align-items: center;
+            align-items: center;
+    border: 1px solid #ccc;
+}
+div {
+    display: inline;
+    /* padding: 20px;   会撑大盒子宽度至 190px */
+    margin: 20px;
+    width: 150px;
+    border: 1px solid #f00;
+}
+.box-h120 {
+    height: 120px;
+}
+.box-h100 {
+    height: 100px;
+}
+.box-h40 {
+    height: 40px;
+}
+.box-h200 {
+    height: 200px;
+    border: 1px solid #00f;
+}
+@media screen and (max-width: 640px) {
+    main {
+        -webkit-align-items: flex-start;
+                align-items: flex-start;
+    }
+    .box-h200 {
+        /* 为什么不推荐负值？ */
+        order: -1;
+    }
+}
