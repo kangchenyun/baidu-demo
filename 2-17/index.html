@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="task.js"></script>
+</head>
+<body>
+<fieldset id="form-gra-time">
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+    <label>周<input name="gra-time" value="week" type="radio"></label>
+    <label>月<input name="gra-time" value="month" type="radio"></label>
+</fieldset>
+
+<fieldset>
+    <legend>请选择查看的城市：</legend>
+    <label>
+        <select id="city-select">
+            <option value="">请选择城市：</option>
+        </select>
+    </label>
+</fieldset>
+
+<fieldset class="display-field" id="display-day">
+    <legend>城市污染数据(日)：</legend>
+    <div></div>
+</fieldset>
+
+<fieldset class="display-field" id="display-week">
+    <legend>城市污染数据(周)：</legend>
+</fieldset>
+
+<fieldset class="display-field" id="display-month">
+    <legend>城市污染数据(月)：</legend>
+</fieldset>
+
+
+<div class="aqi-chart-wrap">
+</div>
+</body>
+</html>

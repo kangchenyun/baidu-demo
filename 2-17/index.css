@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+fieldset {
+    margin: 0 auto;
+    width: 800px;
+}
+.display-field {
+    position: relative;
+    display: none;
+    padding: 0 20px;
+    height: 400px;
+    /*可用300像素*/
+}
+#display-day div {
+    position: absolute;
+    bottom: 40px;
+    width: 8px;
+}
+#display-week div {
+    position: absolute;
+    bottom: 40px;
+    width: 30px;
+}
+#display-month div {
+    position: absolute;
+    bottom: 40px;
+    width: 60px;
+}

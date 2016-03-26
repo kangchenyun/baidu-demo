@@ -16,7 +16,7 @@ function addAqiData() {
     var city = document.getElementById("aqi-city-input").value;
     city = city.replace(/^\s+|\s+$/g, "");
 
-    if (city.match(/\D/g)) {
+    if (city.match(/^[\u4e00-\u9fa5a-zA-Z]+$/g)) {
         var value = document.getElementById("aqi-value-input").value;
         value = value.replace(/^\s+|\s+$/, "");
 
