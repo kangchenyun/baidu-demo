@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    margin: 50px auto;
+}
+
+#display {
+    position: relative;
+    height: 350px;
+    margin: 20px auto;
+}
+
+#display span {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 16px;
+    border: 1px solid #fff;
+    /*background-color: #f00;*/
+
+    /*使文字肉眼不可见*/
+    color: #f00;
+    font-size: 1px;
+}

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7fe8095-5495-455a-9ee1-628d0f7f0382" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="baidu-demo.iws" />
@@ -23,14 +24,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-19/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
               <folding>
-                <element signature="n#h2#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#addBtnBind#0" expanded="false" />
+                <element signature="n#!!block;n#deleteBind#0" expanded="false" />
+                <element signature="n#!!block;n#leftIn#0" expanded="false" />
+                <element signature="n#!!block;n#rightIn#0" expanded="false" />
+                <element signature="n#!!block;n#leftOut#0" expanded="false" />
+                <element signature="n#!!block;n#rightOut#0" expanded="false" />
+                <element signature="n#!!block;n#deleteHandler#0" expanded="false" />
+                <element signature="n#!!block;n#init#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2-19/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-19/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,8 +69,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -82,7 +110,13 @@
         <option value="$PROJECT_DIR$/2-17/index.html" />
         <option value="$PROJECT_DIR$/2-17/index.css" />
         <option value="$PROJECT_DIR$/2-17/task.js" />
+        <option value="$PROJECT_DIR$/2-18/index.css" />
+        <option value="$PROJECT_DIR$/2-18/index.html" />
+        <option value="$PROJECT_DIR$/2-18/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/2-19/index.html" />
+        <option value="$PROJECT_DIR$/2-19/index.css" />
+        <option value="$PROJECT_DIR$/2-19/index.js" />
       </list>
     </option>
   </component>
@@ -281,12 +315,12 @@
       <option name="presentableId" value="Default" />
       <updated>1458043143892</updated>
       <workItem from="1458746164267" duration="27966000" />
-      <workItem from="1458913897873" duration="15350000" />
+      <workItem from="1458913897873" duration="28636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43316000" />
+    <option name="totallyTimeSpent" value="56602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -323,7 +357,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -347,6 +383,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -354,6 +391,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -541,6 +579,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="117" column="32" selection-start-line="116" selection-start-column="7" selection-end-line="117" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -555,14 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1779">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-17/task.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4245">
-          <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -583,13 +614,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2-18/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
           <folding>
             <element signature="n#h2#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-18/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2112">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-18/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-17/task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6360">
+          <caret line="267" column="26" selection-start-line="267" selection-start-column="26" selection-end-line="267" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-19/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-19/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!block;n#addBtnBind#0" expanded="false" />
+            <element signature="n#!!block;n#deleteBind#0" expanded="false" />
+            <element signature="n#!!block;n#leftIn#0" expanded="false" />
+            <element signature="n#!!block;n#rightIn#0" expanded="false" />
+            <element signature="n#!!block;n#leftOut#0" expanded="false" />
+            <element signature="n#!!block;n#rightOut#0" expanded="false" />
+            <element signature="n#!!block;n#deleteHandler#0" expanded="false" />
+            <element signature="n#!!block;n#init#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-19/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
