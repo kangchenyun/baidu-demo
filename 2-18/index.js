@@ -5,7 +5,7 @@
 /**
  * 定义存储队列的数组
  */
-var sourceData = [1, 4, 32, 12];
+var sourceData = [10, 42, 32, 12];
 
 /**
  * 给按钮绑定点击事件
@@ -60,7 +60,7 @@ function deleteBind() {
 function leftIn() {
     var input = document.getElementById("user-input");
     var input_value = input.value;
-    if (!input_value.match(/^\d*$/)) {
+    if (!input_value.match(/^\d+$/)) {
         alert("请输入数字！");
         input.focus();
         input.value = null;
@@ -82,7 +82,7 @@ function leftIn() {
 function rightIn() {
     var input = document.getElementById("user-input");
     var input_value = input.value;
-    if (!input_value.match(/^\d*$/)) {
+    if (!input_value.match(/^\d+$/)) {
         alert("请输入数字！");
         input.focus();
         input.value = null;
