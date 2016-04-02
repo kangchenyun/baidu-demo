@@ -33,9 +33,9 @@ function addBtnBind() {
         rightOut();
         renderData();
     };
-    
+
     var sort = document.getElementById("sort");
-    sort.onclick = function() {
+    sort.onclick = function () {
         visualSort();
     }
 }
@@ -157,31 +157,47 @@ function renderData() {
             elem.innerHTML = obj;
             elem.style.height = parseInt(obj) * 2 + "px";
             elem.style.left = 16 * i + "px";
-            elem.style.backgroundColor = "#0f0";
+            elem.style.backgroundColor = "#f00";
             display.appendChild(elem);
         }
         deleteBind();
     }
-    
+
 }
 
+function highlight(obj, obj1) {
+
+    console.log("yes");
+
+    var temp = obj;
+
+    obj.innerHTML = obj1.innerHTML;
+    obj1.innerHTML = temp.innerHTML;
+
+    obj.style.left = obj1.style.left;
+    obj1.style.left = temp.style.left;
+
+    obj.style.height = obj1.style.height;
+    obj1.style.height = temp.style.height;
+
+}
 /**
  * 可视化排序
  */
 function visualSort() {
-    for (var i = 0, len = sourceData.length; i < len; i++) {
-        for (var j = 0, len1 = sourceData.length; j < len1; j++) {
-            var obj1 = sourceData[j];
-            var obj = sourceData[j + 1];
+    var display = document.getElementById("display");
+    var values = display.getElementsByTagName("span");
 
-            if (obj > obj1) {
-                var temp = sourceData[j];
-                sourceData[j] = sourceData[j + 1];
-                sourceData[j + 1] = temp;
+    for (var i = 0, len = values.length; i < len; i++) {
+        for (var j = 1; j < len; j++) {
+            var obj_value = parseInt(values[i].innerHTML);
+            var obj1_value = parseInt(values[j].innerHTML);
 
-                // 可视化部分
-                highlight(obj);
-            } 
+
+            if (obj_value > obj1_value) {
+            console.log(obj_value, obj1_value);
+                highlight(values[i], values[j]);
+            }
         }
     }
 }

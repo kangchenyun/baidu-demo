@@ -1,0 +1,22 @@
+body {
+    margin: 100px;
+}
+#choose {
+    margin-left: 105px;
+}
+#choose label {
+    margin-left: 0;
+    margin-right:30px;
+}
+#result {
+    margin-top: 40px;
+}
+#result label {
+    display: inline-block;
+    width: 70px;
+    margin-right: 30px;
+    text-align: right;
+}
+select {
+    margin-right: 20px;
+}
