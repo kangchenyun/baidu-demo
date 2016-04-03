@@ -41,21 +41,24 @@ input:focus {
 /* 轮播图 */
 .container {
     overflow: hidden;
+    position: relative;
     width: 300px;
     height: 150px;
     margin: 50px;
 }
 .container div {
-    float: left;
     width: 300px;
     height: 150px;
-    border: 1px solid #ccc;
+}
+#wrap {
+    position: relative;
 }
 nav {
     position: absolute;
+    top: 120px;
+    left: 40px;
     width: 300px;
     height: 150px;
-    margin-top: 120px;
     text-align: right;
 }
 a {
@@ -68,23 +71,68 @@ a {
     line-height: 30px;
     color: #fff;
 }
+
 #box-1 {
+    position: relative;
     background-color: #f00;
+    animation: move1 4s ease-in-out;
+    animation-fill-mode: forwards;
 }
+@keyframes move1 {
+    0% {
+        left: 0;
+    }
+    99% {
+        left: -300px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
 #box-2 {
     background-color: #0f0;
-    transition: background-color 1s;
+    animation: move2 4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes move2 {
+    0% {    position: relative;
 
+        top: -150px;
+        left: 300px;
+    }
+    99% {    position: relative;
+
+        top: -150px;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
 #box-3 {
     background-color: #00f;
+    animation: move3 4s ease-in-out;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes move3 {
+    0% {    position: relative;
+
+        top: -300px;
+        left: 300px;
+    }
+    99% {    position: relative;
+
+        top: -300px;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
 
-.container
-{
-    background:red;
-    animation:myfirst 3s;
-    -moz-animation:myfirst 3s;
-    -webkit-animation:myfirst 3s;
-    -o-animation:myfirst 3s;
-}
