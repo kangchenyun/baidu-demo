@@ -13,10 +13,10 @@ var school = [
     ["上海", "上海交通大学"],
     ["上海", "上海财经大学"],
     ["上海", "同济大学"],
+    ["陕西", "长安大学"],
     ["陕西", "西安交通大学"],
     ["陕西", "西北工业大学"],
     ["陕西", "西安电子科技大学"],
-    ["陕西", "长安大学"],
     ["江苏", "南京大学"],
     ["江苏", "南京航天航空大学"],
     ["江苏", "东南大学"],
@@ -78,13 +78,13 @@ function changeUniversity() {
 function showForm() {
     var student = document.getElementById("student");
     var graduate = document.getElementById("graduate");
-    var not_graduate = document.getElementById("not_graduate");
+    var undergraduate = document.getElementById("undergraduate");
     
     if (student.checked) {
-        not_graduate.style.display = "block";
+        undergraduate.style.display = "block";
         graduate.style.display = "none";
     } else {
-        not_graduate.style.display = "none";
+        undergraduate.style.display = "none";
         graduate.style.display = "block";
     }
 }

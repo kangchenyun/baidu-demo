@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    position: relative;
+    margin: 100px;
+}
+#wrap {
+    width: 502px;
+    border: 1px solid #666;
+}
+#wrap span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    /* 换行之后行间会默认有4像素间距 */
+    margin-bottom: -4px;
+    border: 1px solid #ccc;
+}
+#x-axis {
+    position: absolute;
+    top: -40px;
+}
+#x-axis span {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+#y-axis {
+    position: absolute;
+    left: -55px;
+    top: 15px;
+    width: 50px;
+}
+#y-axis span {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+#move {
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+    border-bottom: 10px solid #00f;
+    background-color: #f00;
+    /*transform: rotate(-90deg);*/
+}
+#square {
+    margin-top: 20px;
+}
+input {
+    width: 306px;
+    margin-bottom: 10px;
+}
