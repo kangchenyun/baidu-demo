@@ -19,37 +19,78 @@ var pos_top = 1;
 var pos_left = 1;
 var inti_deg = 0;
 
+
 function moveForward() {
     var move = document.getElementById("move");
     switch (direction) {
         case "down":
             if (pos_top < 451) {
-                pos_top += 50;
-                move.style.top = pos_top + "px";
+                var count1 = 0;
+                var timer1 = setInterval(function () {
+                    pos_top += 1;
+                    count1 += 1;
+                    if (pos_top >= 451) {
+                        clearInterval(timer1);
+                    }
+                    move.style.top = pos_top + "px";
+                    if (count1 == 50) {
+                        clearInterval(timer1);
+                    }
+                }, 5);
             } else {
                 alert("到达边界，请另寻出路");
             }
             break;
         case "up":
             if (pos_top > 1) {
-                pos_top -= 50;
-                move.style.top = pos_top + "px";
+                var count2 = 0;
+                var timer2 = setInterval(function () {
+                    pos_top -= 1;
+                    count2 += 1;
+                    if (pos_top <= 1) {
+                        clearInterval(timer2);
+                    }
+                    move.style.top = pos_top + "px";
+                    if (count2 == 50) {
+                        clearInterval(timer2);
+                    }
+                }, 5);
             } else {
                 alert("到达边界，请另寻出路");
             }
             break;
         case "right":
             if (pos_left < 451) {
-                pos_left += 50;
-                move.style.left = pos_left + "px";
+                var count3 = 0;
+                var timer3 = setInterval(function () {
+                    pos_left += 1;
+                    count3 += 1;
+                    if (pos_left >= 451) {
+                        clearInterval(timer3);
+                    }
+                    move.style.left = pos_left + "px";
+                    if (count3 == 50) {
+                        clearInterval(timer3);
+                    }
+                }, 5);
             } else {
                 alert("到达边界，请另寻出路");
             }
             break;
         case "left":
             if (pos_left > 1) {
-                pos_left -= 50;
-                move.style.left = pos_left + "px";
+                var count4 = 0;
+                var timer4 = setInterval(function () {
+                    pos_left -= 1;
+                    count4 += 1;
+                    if (pos_left <= 1) {
+                        clearInterval(timer4);
+                    }
+                    move.style.left = pos_left + "px";
+                    if (count4 == 50) {
+                        clearInterval(timer4);
+                    }
+                }, 5);
             } else {
                 alert("到达边界，请另寻出路");
             }
