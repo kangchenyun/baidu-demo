@@ -7,9 +7,13 @@
  */
 function createSpace() {
     var wrap = document.getElementById("wrap");
-    for (var i = 0; i < 100; i++) {
-        var span = document.createElement("span");
-        wrap.appendChild(span);
+    for (var i = 0; i < 10; i++) {
+        var row = document.createElement("tr");
+        for (var j = 0; j < 10; j++) {
+            var data = document.createElement("td");
+            row.appendChild(data);
+        }
+        wrap.appendChild(row);
     }
 }
 
